@@ -10,6 +10,10 @@ import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 
+// import the mock data into the database
+import User from "./models/User.js";
+import { dataUser } from "./data/index.js";
+
 /* CONFIGURATION */
 dotenv.config();
 const app = express();
@@ -36,5 +40,7 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
+    /* ONLY ADD DATA ONE TIME */
+    User.insertMany(dataUser);
   })
   .catch((error) => console.log(`${error} did not connect`));
