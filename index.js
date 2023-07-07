@@ -12,7 +12,9 @@ import salesRoutes from "./routes/sales.js";
 
 // import the mock data into the database
 import User from "./models/User.js";
-import { dataUser } from "./data/index.js";
+import Product from "./models/Product.js";
+import ProductStat from "./models/ProductStat.js";
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js";
 
 /* CONFIGURATION */
 dotenv.config();
@@ -41,6 +43,9 @@ mongoose
   .then(() => {
     app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
     /* ONLY ADD DATA ONE TIME */
-    User.insertMany(dataUser);
+    Product.insertMany(dataProduct);
+    ProductStat.insertMany(dataProductStat);
+    // TODO: add mock data to the database
+    // User.insertMany(dataUser);
   })
   .catch((error) => console.log(`${error} did not connect`));
