@@ -2,6 +2,18 @@ import mongoose from "mongoose";
 import User from "../models/User.js";
 import Transaction from "../models/Transaction.js";
 
+/**
+ * @description This file contains the controllers for the management endpoints
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
+
+/**
+ * @description Get all admins
+ * @param {*} req
+ * @param {*} res
+ * @route GET /management/admins
+ * @access Public
+ */
 export const getAdmins = async (req, res) => {
   try {
     const admins = await User.find({ role: "admin" }).select("-password");
@@ -11,6 +23,13 @@ export const getAdmins = async (req, res) => {
   }
 };
 
+/**
+ * @description Get the performance stats of users
+ * @param {id} req
+ * @param {*} res
+ * @route GET /management/performance/:id
+ * @access Public
+ */
 export const getUserPerformance = async (req, res) => {
   try {
     const { id } = req.params;

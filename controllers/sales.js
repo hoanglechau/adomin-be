@@ -1,5 +1,17 @@
 import OverallStat from "../models/OverallStat.js";
 
+/**
+ * @description This file contains the controllers for the sales endpoints
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
+
+/**
+ * @description Get all sales data
+ * @param {*} req
+ * @param {*} res
+ * @route GET /sales/sales
+ * @access Public
+ */
 export const getSales = async (req, res) => {
   try {
     const overallStats = await OverallStat.find();

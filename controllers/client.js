@@ -4,6 +4,18 @@ import User from "../models/User.js";
 import Transaction from "../models/Transaction.js";
 import getCountryIso3 from "country-iso-2-to-3";
 
+/**
+ * @description This file contains the controllers for the client endpoints
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
+
+/**
+ * @description Get all products
+ * @param {*} req
+ * @param {*} res
+ * @route GET /client/products
+ * @access Public
+ */
 export const getProducts = async (req, res) => {
   try {
     const products = await Product.find();
@@ -26,6 +38,13 @@ export const getProducts = async (req, res) => {
   }
 };
 
+/**
+ * @description Get all customers
+ * @param {*} req
+ * @param {*} res
+ * @route GET /client/customers
+ * @access Public
+ */
 export const getCustomers = async (req, res) => {
   try {
     const customers = await User.find({ role: "user" }).select("-password");
@@ -74,6 +93,13 @@ export const getTransactions = async (req, res) => {
   }
 };
 
+/**
+ * @description Get the locations of all customers
+ * @param {*} req
+ * @param {*} res
+ * @route GET /client/geography
+ * @access Public
+ */
 export const getGeography = async (req, res) => {
   try {
     const users = await User.find();

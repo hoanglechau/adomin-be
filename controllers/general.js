@@ -2,6 +2,18 @@ import User from "../models/User.js";
 import OverallStat from "../models/OverallStat.js";
 import Transaction from "../models/Transaction.js";
 
+/**
+ * @description This file contains the controllers for the general endpoints
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
+
+/**
+ * @description Get a single user by ID
+ * @param {id} req
+ * @param {*} res
+ * @route GET /general/user/:id
+ * @access Public
+ */
 export const getUser = async (req, res) => {
   try {
     const { id } = req.params;
@@ -12,6 +24,13 @@ export const getUser = async (req, res) => {
   }
 };
 
+/**
+ * @description Get the Dashboard stats
+ * @param {*} req
+ * @param {*} res
+ * @route GET /general/dashboard
+ * @access Public
+ */
 export const getDashboardStats = async (req, res) => {
   try {
     // hardcoded values
