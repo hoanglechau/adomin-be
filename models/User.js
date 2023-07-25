@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
 
+/**
+ * @description This file contains the Mongoose schema and model for the users of the store
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
 const UserSchema = new mongoose.Schema(
   {
     name: {

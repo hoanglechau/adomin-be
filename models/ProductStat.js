@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
 
+/**
+ * @description This file contains the Mongoose schema and model for the product stats of the store
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
 const ProductStatSchema = new mongoose.Schema(
   {
     productId: String,

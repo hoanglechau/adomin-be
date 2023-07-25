@@ -1,3 +1,7 @@
+/**
+ * @description This file contains the data to be added to the database (only once)
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
 export const dataAffiliateStat = [
   {
     _id: "6371251df03239e680000033",
@@ -18041,10 +18045,10 @@ export const dataUser = [
   },
   {
     _id: "63701cc1f03239b7f700000e",
-    name: "Shelly",
-    email: "swelbeck12@ycombinator.com",
+    name: "Kitagawa",
+    email: "keiko12@ycombinator.com",
     password: "RSjzmAjnq",
-    city: "Sangoleng",
+    city: "Tokyo",
     state: null,
     country: "ID",
     occupation: "Pharmacist",

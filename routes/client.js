@@ -6,6 +6,11 @@ import {
   getGeography,
 } from "../controllers/client.js";
 
+/**
+ * @description This file contains the routes for the client endpoints
+ * @author [Hoang Le Chau](https://github.com/hoanglechau)
+ */
+
 const router = express.Router();
 
 router.get("/products", getProducts);
