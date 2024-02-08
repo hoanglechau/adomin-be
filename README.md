@@ -8,6 +8,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#links">Links</a></li>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -36,9 +37,21 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#links">Links</a></li>
   </ol>
 </details>
+
+---
+
+<!-- LINKS -->
+
+## **Links**
+
+- Frontend Repository: [https://github.com/hoanglechau/adomin-fe](https://github.com/hoanglechau/adomin-fe)
+- Backend Repository: [https://github.com/hoanglechau/adomin-be](https://github.com/hoanglechau/adomin-be)
+- Deployed Frontend: [https://adomin.vercel.app/](https://adomin.vercel.app/)
+- Deployed Backend: [https://adomin-be-production.up.railway.app/](https://adomin-be-production.up.railway.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -246,8 +259,8 @@ Adomin is a full-stack e-commerce Admin Dashboard app that displays graphs and t
    ```
 3. Create an `.env` file with the following contents
    ```js
-   MONGO_URI = your_mongodb_uri;
-   PORT = your_port; // default value: 9000
+   MONGO_URI=your_mongodb_uri
+   PORT=your_port // default value: 9000
    ```
 4. Replace the default values with your own values for `PORT` (optional), and `MONGO_URI` in the `.env` file
 5. Start the server
@@ -268,7 +281,7 @@ Adomin is a full-stack e-commerce Admin Dashboard app that displays graphs and t
    ```
 3. Create an `.env` file with the following contents
    ```js
-   REACT_APP_BASE_URL = your_api_url; // default: http://localhost:5001
+   REACT_APP_BASE_URL=your_api_url // default: http://localhost:5001
    ```
 4. Replace the value of `REACT_APP_BASE_URL` with the URL of your deployed API
 5. Build the app
@@ -283,17 +296,6 @@ Adomin is a full-stack e-commerce Admin Dashboard app that displays graphs and t
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
-
-<!-- LINKS -->
-
-## **Links**
-
-- Frontend Repository: [https://github.com/hoanglechau/adomin-fe](https://github.com/hoanglechau/adomin-fe)
-- Backend Repository: [https://github.com/hoanglechau/adomin-be](https://github.com/hoanglechau/adomin-be)
-- Deployed Frontend: [https://adomin.vercel.app/](https://adomin.vercel.app/)
-- Deployed Backend: [https://adomin-be-production.up.railway.app/](https://adomin-be-production.up.railway.app/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
