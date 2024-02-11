@@ -295,8 +295,6 @@ Adomin is a full-stack e-commerce Admin Dashboard app that displays graphs and t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
